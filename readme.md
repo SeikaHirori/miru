@@ -1,6 +1,13 @@
 # Objective:
 - Resolve personal issue of "o no, what anime/manga should I from my ***MAL/Anilist/Kitsu.io*** list? idk sad :'("
 - LEARN WHAT AND HOW EVERYTHING WORKS :3
+
+## Update objective (4/6/2023)
+- Rework code from Python to Swift.
+- This also means migrating from Django web framework to SwiftUI framework for iOS and MacOS.
+    - If workable, try to use (SwiftWasm)[https://swiftwasm.org/] for the web aspect.
+        - Will be able to leverage and improve on gained HTML and SASS experience from working on (personal website)[https://seikahirori.github.io/]
+
 # First phase of project
 - Learn how to parse and obtain values from user's MAL/Anilist/Kitsu.io list...
 - As well as obtain certain values from the anime database JSON
