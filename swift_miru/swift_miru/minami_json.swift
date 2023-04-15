@@ -26,7 +26,6 @@ struct OfflineMinamiDatabase:Codable {
 /// - Returns: URL of database
 func get_anime_database_repo_url() -> String {
 
-
     var result:String
 
     let url = "https://github.com/manami-project/anime-offline-database/blob/master/anime-offline-database.json?raw=true"
