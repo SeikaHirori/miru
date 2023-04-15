@@ -28,8 +28,8 @@ struct OfflineMinamiDatabase:Codable {
         let animeSeason: AnimeSeason
         let picture: String
         let thumbnail: String
-        let synonyms: [String]
-        let relations: [String]
+//        let synonyms: [String]
+//        let relations: [String]
         let tags: [String]
         
         

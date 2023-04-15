@@ -9,13 +9,55 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    var loadedOfflineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
+    let fileName:String = "anime-offline-database.json"
+    
+    @State private var loadedOfflineMinamiDatabase: OfflineMinamiDatabase?
+//    var loadedOfflineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
     
     var body: some View {
-        return VStack {
-            Text("Hello World")
-            Text("Total Entries: \(loadedOfflineMinamiDatabase.data.count)")
+        return NavigationStack {
+            VStack {
+                Text("Hello World")
+                Text("Total Entries: \(loadedOfflineMinamiDatabase?.data.count ?? 0)")
+            }
+            .toolbar {
+                HStack {
+                    
+                    Button("Load db") {
+                        loadedOfflineMinamiDatabase = Bundle.main.decode(fileName)
+                        print("db is loaded")
+                    }
+                    Divider()
+                    
+                    Button("Save db") {
+                        saveDbLocally()
+                    }
+                    Divider()
+                    
+                    Button("Clear db") {
+                        loadedOfflineMinamiDatabase = nil
+                        
+                        print("db is cleared!")
+                    }
+
+                }
+            }
             
+        }
+    }
+    
+    func saveDbLocally() -> Void {
+        let encoder = JSONEncoder()
+        
+        if loadedOfflineMinamiDatabase == nil {
+            print("db is non-existent")
+            return
+        }
+        
+        if let data = try? encoder.encode(loadedOfflineMinamiDatabase) {
+            UserDefaults.standard.set(data, forKey: "loadedOfflineMinamiDatabase")
+            
+            print("Sucessfully saved!")
         }
     }
 }
