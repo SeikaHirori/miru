@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0F488929EB237000208CB4 /* minami_json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F488829EB237000208CB4 /* minami_json.swift */; };
 		3F8B458A29EB188D0071C105 /* swift_miruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458929EB188D0071C105 /* swift_miruApp.swift */; };
 		3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458B29EB188D0071C105 /* Persistence.swift */; };
 		3F8B458F29EB188D0071C105 /* swift_miru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458D29EB188D0071C105 /* swift_miru.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0F488829EB237000208CB4 /* minami_json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minami_json.swift; sourceTree = "<group>"; };
 		3F8B458629EB188D0071C105 /* swift_miru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_miru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8B458929EB188D0071C105 /* swift_miruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruApp.swift; sourceTree = "<group>"; };
 		3F8B458B29EB188D0071C105 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		3F8B45A629EB18900071C105 /* swift_miruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_miruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8B45AA29EB18900071C105 /* swift_miruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruUITests.swift; sourceTree = "<group>"; };
 		3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F8B466829EB1BE60071C105 /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
+		3F8B466929EB1BEF0071C105 /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		3F8B457D29EB188D0071C105 = {
 			isa = PBXGroup;
 			children = (
+				3F8B466729EB1BD60071C105 /* _docs */,
 				3F8B458829EB188D0071C105 /* swift_miru */,
 				3F8B459F29EB188F0071C105 /* swift_miruTests */,
 				3F8B45A929EB18900071C105 /* swift_miruUITests */,
@@ -99,6 +104,7 @@
 		3F8B458829EB188D0071C105 /* swift_miru */ = {
 			isa = PBXGroup;
 			children = (
+				3F0F488829EB237000208CB4 /* minami_json.swift */,
 				3F8B458929EB188D0071C105 /* swift_miruApp.swift */,
 				3F8B458B29EB188D0071C105 /* Persistence.swift */,
 				3F8B459029EB188D0071C105 /* ContentView.swift */,
@@ -133,6 +139,15 @@
 				3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */,
 			);
 			path = swift_miruUITests;
+			sourceTree = "<group>";
+		};
+		3F8B466729EB1BD60071C105 /* _docs */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B466829EB1BE60071C105 /* notes.md */,
+				3F8B466929EB1BEF0071C105 /* rfer.md */,
+			);
+			path = _docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F8B458A29EB188D0071C105 /* swift_miruApp.swift in Sources */,
+				3F0F488929EB237000208CB4 /* minami_json.swift in Sources */,
 				3F8B458F29EB188D0071C105 /* swift_miru.xcdatamodeld in Sources */,
 				3F8B459129EB188D0071C105 /* ContentView.swift in Sources */,
 				3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */,
