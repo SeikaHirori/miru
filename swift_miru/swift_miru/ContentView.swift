@@ -8,9 +8,20 @@
 import SwiftUI
 import CoreData
 
+struct ContentView: View {
+    let offlineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
+    
+    var body: some View {
+        return VStack {
+            Text("Hello World")
+            Text("Total entries: \(offlineMinamiDatabase.data.count)")
+        }
+    }
+}
+
 
 // Original code created when checked out Core Data and CloudKit
-struct ContentView: View {
+struct OriginalContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(

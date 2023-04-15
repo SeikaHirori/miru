@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct AnimeEntry:Codable, Identifiable {
-    let id: String
+struct AnimeEntry:Codable {
     
     let title: String
     let sources: [String]
