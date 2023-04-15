@@ -8,9 +8,21 @@
 import SwiftUI
 import CoreData
 
-
-/* Code
 struct ContentView: View {
+    var loadedOfflineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
+    
+    var body: some View {
+        return VStack {
+            Text("Hello World")
+            Text("Total Entries: \(loadedOfflineMinamiDatabase.data.count)")
+            
+        }
+    }
+}
+
+
+// Original code created when checked out Core Data and CloudKit
+struct OriginalContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -90,4 +102,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
-*/
+

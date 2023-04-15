@@ -17,19 +17,28 @@ extension Bundle {
         
         guard let url = self.url(forResource: file, withExtension: nil) else {
             let type: String = "locate"
-            fatalError(failureMessage(type: type))
-        }
+            let errorMessage = failureMessage(type: type)
+            
+            print(errorMessage)
+            fatalError(errorMessage)}
         
         guard let data = try? Data(contentsOf: url) else {
             let type: String = "load"
-            fatalError(failureMessage(type: type))
+            let errorMessage = failureMessage(type: type)
+            
+            print(errorMessage)
+            fatalError(errorMessage)
+            
         }
         
         
         let decoder: JSONDecoder = JSONDecoder()
         guard let loaded = try? decoder.decode(OfflineMinamiDatabase.self, from: data) else {
             let type: String = "decode"
-            fatalError(failureMessage(type: type))
+            let errorMessage = failureMessage(type: type)
+            
+            print(errorMessage)
+            fatalError(errorMessage)
         }
         
         result = loaded
