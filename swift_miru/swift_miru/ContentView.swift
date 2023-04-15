@@ -9,12 +9,13 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    let offlineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
+    var loadedOfflineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
     
     var body: some View {
         return VStack {
             Text("Hello World")
-            Text("Total entries: \(offlineMinamiDatabase.data.count)")
+            Text("Total Entries: \(loadedOfflineMinamiDatabase.data.count)")
+            
         }
     }
 }
