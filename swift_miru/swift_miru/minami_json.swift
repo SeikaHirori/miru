@@ -25,7 +25,7 @@ struct OfflineMinamiDatabase:Codable {
         let type: String
         let episodes: Int
         let status: String
-//        let animeSeason: AnimeSeason // Broken
+        let animeSeason: AnimeSeason
         let picture: String
         let thumbnail: String
         let synonyms: [String]
@@ -33,11 +33,13 @@ struct OfflineMinamiDatabase:Codable {
         let tags: [String]
         
         
-        struct AnimeSeason: Codable {
-            let season: String
-            let year: Int
-        }
     }
+    
+    struct AnimeSeason: Codable {
+        let season: String?
+        let year: Int?
+    }
+
 
 }
 
