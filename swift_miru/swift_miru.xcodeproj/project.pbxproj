@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F8B458A29EB188D0071C105 /* swift_miruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458929EB188D0071C105 /* swift_miruApp.swift */; };
+		3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458B29EB188D0071C105 /* Persistence.swift */; };
+		3F8B458F29EB188D0071C105 /* swift_miru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458D29EB188D0071C105 /* swift_miru.xcdatamodeld */; };
+		3F8B459129EB188D0071C105 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B459029EB188D0071C105 /* ContentView.swift */; };
+		3F8B459329EB188F0071C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8B459229EB188F0071C105 /* Assets.xcassets */; };
+		3F8B459729EB188F0071C105 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8B459629EB188F0071C105 /* Preview Assets.xcassets */; };
+		3F8B45A129EB188F0071C105 /* swift_miruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B45A029EB188F0071C105 /* swift_miruTests.swift */; };
+		3F8B45AB29EB18900071C105 /* swift_miruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B45AA29EB18900071C105 /* swift_miruUITests.swift */; };
+		3F8B45AD29EB18900071C105 /* swift_miruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F8B459D29EB188F0071C105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8B457E29EB188D0071C105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F8B458529EB188D0071C105;
+			remoteInfo = swift_miru;
+		};
+		3F8B45A729EB18900071C105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8B457E29EB188D0071C105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F8B458529EB188D0071C105;
+			remoteInfo = swift_miru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F8B458629EB188D0071C105 /* swift_miru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_miru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8B458929EB188D0071C105 /* swift_miruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruApp.swift; sourceTree = "<group>"; };
+		3F8B458B29EB188D0071C105 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3F8B458E29EB188D0071C105 /* swift_miru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift_miru.xcdatamodel; sourceTree = "<group>"; };
+		3F8B459029EB188D0071C105 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F8B459229EB188F0071C105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F8B459429EB188F0071C105 /* swift_miru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_miru.entitlements; sourceTree = "<group>"; };
+		3F8B459629EB188F0071C105 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F8B459C29EB188F0071C105 /* swift_miruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_miruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8B45A029EB188F0071C105 /* swift_miruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruTests.swift; sourceTree = "<group>"; };
+		3F8B45A629EB18900071C105 /* swift_miruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_miruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8B45AA29EB18900071C105 /* swift_miruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruUITests.swift; sourceTree = "<group>"; };
+		3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F8B458329EB188D0071C105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8B459929EB188F0071C105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8B45A329EB18900071C105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8B457D29EB188D0071C105 = {
+			isa = PBXGroup;
+			children = (
+				3F8B458829EB188D0071C105 /* swift_miru */,
+				3F8B459F29EB188F0071C105 /* swift_miruTests */,
+				3F8B45A929EB18900071C105 /* swift_miruUITests */,
+				3F8B458729EB188D0071C105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F8B458729EB188D0071C105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B458629EB188D0071C105 /* swift_miru.app */,
+				3F8B459C29EB188F0071C105 /* swift_miruTests.xctest */,
+				3F8B45A629EB18900071C105 /* swift_miruUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F8B458829EB188D0071C105 /* swift_miru */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B458929EB188D0071C105 /* swift_miruApp.swift */,
+				3F8B458B29EB188D0071C105 /* Persistence.swift */,
+				3F8B459029EB188D0071C105 /* ContentView.swift */,
+				3F8B459229EB188F0071C105 /* Assets.xcassets */,
+				3F8B459429EB188F0071C105 /* swift_miru.entitlements */,
+				3F8B458D29EB188D0071C105 /* swift_miru.xcdatamodeld */,
+				3F8B459529EB188F0071C105 /* Preview Content */,
+			);
+			path = swift_miru;
+			sourceTree = "<group>";
+		};
+		3F8B459529EB188F0071C105 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B459629EB188F0071C105 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F8B459F29EB188F0071C105 /* swift_miruTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B45A029EB188F0071C105 /* swift_miruTests.swift */,
+			);
+			path = swift_miruTests;
+			sourceTree = "<group>";
+		};
+		3F8B45A929EB18900071C105 /* swift_miruUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B45AA29EB18900071C105 /* swift_miruUITests.swift */,
+				3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */,
+			);
+			path = swift_miruUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F8B458529EB188D0071C105 /* swift_miru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8B45B029EB18900071C105 /* Build configuration list for PBXNativeTarget "swift_miru" */;
+			buildPhases = (
+				3F8B458229EB188D0071C105 /* Sources */,
+				3F8B458329EB188D0071C105 /* Frameworks */,
+				3F8B458429EB188D0071C105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swift_miru;
+			productName = swift_miru;
+			productReference = 3F8B458629EB188D0071C105 /* swift_miru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F8B459B29EB188F0071C105 /* swift_miruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8B45B329EB18900071C105 /* Build configuration list for PBXNativeTarget "swift_miruTests" */;
+			buildPhases = (
+				3F8B459829EB188F0071C105 /* Sources */,
+				3F8B459929EB188F0071C105 /* Frameworks */,
+				3F8B459A29EB188F0071C105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8B459E29EB188F0071C105 /* PBXTargetDependency */,
+			);
+			name = swift_miruTests;
+			productName = swift_miruTests;
+			productReference = 3F8B459C29EB188F0071C105 /* swift_miruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F8B45A529EB18900071C105 /* swift_miruUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8B45B629EB18900071C105 /* Build configuration list for PBXNativeTarget "swift_miruUITests" */;
+			buildPhases = (
+				3F8B45A229EB18900071C105 /* Sources */,
+				3F8B45A329EB18900071C105 /* Frameworks */,
+				3F8B45A429EB18900071C105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8B45A829EB18900071C105 /* PBXTargetDependency */,
+			);
+			name = swift_miruUITests;
+			productName = swift_miruUITests;
+			productReference = 3F8B45A629EB18900071C105 /* swift_miruUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F8B457E29EB188D0071C105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3F8B458529EB188D0071C105 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3F8B459B29EB188F0071C105 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3F8B458529EB188D0071C105;
+					};
+					3F8B45A529EB18900071C105 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3F8B458529EB188D0071C105;
+					};
+				};
+			};
+			buildConfigurationList = 3F8B458129EB188D0071C105 /* Build configuration list for PBXProject "swift_miru" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F8B457D29EB188D0071C105;
+			productRefGroup = 3F8B458729EB188D0071C105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F8B458529EB188D0071C105 /* swift_miru */,
+				3F8B459B29EB188F0071C105 /* swift_miruTests */,
+				3F8B45A529EB18900071C105 /* swift_miruUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F8B458429EB188D0071C105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8B459729EB188F0071C105 /* Preview Assets.xcassets in Resources */,
+				3F8B459329EB188F0071C105 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8B459A29EB188F0071C105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8B45A429EB18900071C105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F8B458229EB188D0071C105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8B458A29EB188D0071C105 /* swift_miruApp.swift in Sources */,
+				3F8B458F29EB188D0071C105 /* swift_miru.xcdatamodeld in Sources */,
+				3F8B459129EB188D0071C105 /* ContentView.swift in Sources */,
+				3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8B459829EB188F0071C105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8B45A129EB188F0071C105 /* swift_miruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8B45A229EB18900071C105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8B45AB29EB18900071C105 /* swift_miruUITests.swift in Sources */,
+				3F8B45AD29EB18900071C105 /* swift_miruUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F8B459E29EB188F0071C105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F8B458529EB188D0071C105 /* swift_miru */;
+			targetProxy = 3F8B459D29EB188F0071C105 /* PBXContainerItemProxy */;
+		};
+		3F8B45A829EB18900071C105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F8B458529EB188D0071C105 /* swift_miru */;
+			targetProxy = 3F8B45A729EB18900071C105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F8B45AE29EB18900071C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F8B45AF29EB18900071C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3F8B45B129EB18900071C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = swift_miru/swift_miru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swift_miru/Preview Content\"";
+				DEVELOPMENT_TEAM = W9872ZR7W8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SeikaHirori.swift-miru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F8B45B229EB18900071C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = swift_miru/swift_miru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swift_miru/Preview Content\"";
+				DEVELOPMENT_TEAM = W9872ZR7W8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SeikaHirori.swift-miru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F8B45B429EB18900071C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9872ZR7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SeikaHirori.swift-miruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_miru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift_miru";
+			};
+			name = Debug;
+		};
+		3F8B45B529EB18900071C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9872ZR7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SeikaHirori.swift-miruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_miru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift_miru";
+			};
+			name = Release;
+		};
+		3F8B45B729EB18900071C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9872ZR7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SeikaHirori.swift-miruUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swift_miru;
+			};
+			name = Debug;
+		};
+		3F8B45B829EB18900071C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9872ZR7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SeikaHirori.swift-miruUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swift_miru;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F8B458129EB188D0071C105 /* Build configuration list for PBXProject "swift_miru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8B45AE29EB18900071C105 /* Debug */,
+				3F8B45AF29EB18900071C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8B45B029EB18900071C105 /* Build configuration list for PBXNativeTarget "swift_miru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8B45B129EB18900071C105 /* Debug */,
+				3F8B45B229EB18900071C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8B45B329EB18900071C105 /* Build configuration list for PBXNativeTarget "swift_miruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8B45B429EB18900071C105 /* Debug */,
+				3F8B45B529EB18900071C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8B45B629EB18900071C105 /* Build configuration list for PBXNativeTarget "swift_miruUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8B45B729EB18900071C105 /* Debug */,
+				3F8B45B829EB18900071C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F8B458D29EB188D0071C105 /* swift_miru.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F8B458E29EB188D0071C105 /* swift_miru.xcdatamodel */,
+			);
+			currentVersion = 3F8B458E29EB188D0071C105 /* swift_miru.xcdatamodel */;
+			path = swift_miru.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F8B457E29EB188D0071C105 /* Project object */;
+}
