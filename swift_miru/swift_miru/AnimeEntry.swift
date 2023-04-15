@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct AnimeEntry:Codable {
+struct AnimeEntry:Codable, Identifiable {
+    let id: String
+    
     let title: String
     let sources: [String]
     let type: String
@@ -17,7 +19,6 @@ struct AnimeEntry:Codable {
     let synonyms: [String]
     let relations: [String]
     let tags: [String]
-    
     
     
     struct AnimeSeason: Codable {

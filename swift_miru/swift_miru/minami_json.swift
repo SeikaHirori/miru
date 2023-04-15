@@ -8,11 +8,21 @@
 import Foundation
 
 
+struct OfflineMinamiDatabase:Codable {
+    let license: License
+    let repository: String
+    let lastUpdate: String
+    let data: [AnimeEntry]
+    
+    struct License: Codable {
+        let name: String
+        let url: String
+    }
+}
 
 
 
-
-/// Anime database comes from repo: https://github.com/manami-project/anime-offline-database
+/// Offline Anime database comes from repo: https://github.com/manami-project/anime-offline-database
 /// - Returns: URL of database
 func get_anime_database_url() -> String {
 
