@@ -19,6 +19,12 @@ struct ContentView: View {
             VStack {
                 Text("Hello World")
                 Text("Total Entries: \(loadedOfflineMinamiDatabase?.data.count ?? 0)")
+                
+                if loadedOfflineMinamiDatabase != nil {
+                    List {
+                        Text(loadedOfflineMinamiDatabase!.license.name)
+                    }
+                }
             }
             .toolbar {
                 HStack {

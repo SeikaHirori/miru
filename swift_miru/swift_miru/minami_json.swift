@@ -20,6 +20,7 @@ struct OfflineMinamiDatabase:Codable {
     }
     
     struct AnimeEntry:Codable {
+        
         let sources: [String]
         let title: String
         let type: String
