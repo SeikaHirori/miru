@@ -179,6 +179,8 @@
 			dependencies = (
 			);
 			name = swift_miru;
+			packageProductDependencies = (
+			);
 			productName = swift_miru;
 			productReference = 3F8B458629EB188D0071C105 /* swift_miru.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +253,8 @@
 				Base,
 			);
 			mainGroup = 3F8B457D29EB188D0071C105;
+			packageReferences = (
+			);
 			productRefGroup = 3F8B458729EB188D0071C105 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
