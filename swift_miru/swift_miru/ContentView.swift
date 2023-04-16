@@ -29,6 +29,11 @@ struct ContentView: View {
                         NavigationLink("All Anime Entries") {
                             AllAnimeView(loadedOfflineMinamiDatabase: loadedOfflineMinamiDatabase!)
                         }
+                        
+                        NavigationLink("Random entry") {
+                            RandomAnimeView(loadedOfflineMinamiDatabase: loadedOfflineMinamiDatabase!)
+                        }
+                        
                     } else {
                         Text("No database detected :'[")
                     }

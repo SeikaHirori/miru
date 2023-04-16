@@ -15,7 +15,7 @@ struct LabelAnimeHorizontal: View {
             Text(animeEntry.title)
                 .font(.title)
                 .minimumScaleFactor(0.1)
-                .frame(maxWidth: .infinity, maxHeight: 50 ,alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
                 .background(Color.indigo)
                 .foregroundColor(.white)
@@ -25,7 +25,6 @@ struct LabelAnimeHorizontal: View {
             
             VStack {
                 Text(animeEntry.animeSeason.formattedSeason)
-                Spacer()
                 Text(animeEntry.status)
             }
             .font(.caption)
@@ -35,7 +34,7 @@ struct LabelAnimeHorizontal: View {
             
         }
         .padding()
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: 100)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: 10)
