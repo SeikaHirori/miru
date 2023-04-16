@@ -2,7 +2,13 @@
 - Resolve personal issue of "o no, what anime/manga should I from my ***MAL/Anilist/Kitsu.io*** list? idk sad :'("
 - LEARN WHAT AND HOW EVERYTHING WORKS :3
 
-## Update objective (4/6/2023)
+## Update objectives 
+
+### (4/15/2023)
+- Started migration to Swift and SwiftUI
+    - Already linked up Codable to JSON for Project Minami's Offline Anime Database
+
+### (4/6/2023)
 - Rework code from Python to Swift.
 - This also means migrating from Django web framework to SwiftUI framework for iOS and MacOS.
     - If workable, try to use (SwiftWasm)[https://swiftwasm.org/] for the web aspect.
