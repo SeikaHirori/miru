@@ -22,6 +22,7 @@
 		3F8B45A129EB188F0071C105 /* swift_miruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B45A029EB188F0071C105 /* swift_miruTests.swift */; };
 		3F8B45AB29EB18900071C105 /* swift_miruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B45AA29EB18900071C105 /* swift_miruUITests.swift */; };
 		3F8B45AD29EB18900071C105 /* swift_miruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */; };
+		3FDFB4D629EBA2F500A7A6A9 /* AnimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFB4D529EBA2F500A7A6A9 /* AnimeEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		3F8B45AC29EB18900071C105 /* swift_miruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F8B466829EB1BE60071C105 /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
 		3F8B466929EB1BEF0071C105 /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
+		3FDFB4D429EBA0BE00A7A6A9 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		3FDFB4D529EBA2F500A7A6A9 /* AnimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 				3F8B459529EB188F0071C105 /* Preview Content */,
 				3F0F489029EB302000208CB4 /* Bundle-Decodable.swift */,
 				3F08916929EB4B670047A8CF /* OfflineDatabaseView.swift */,
+				3FDFB4D529EBA2F500A7A6A9 /* AnimeEntry.swift */,
 			);
 			path = swift_miru;
 			sourceTree = "<group>";
@@ -159,6 +163,7 @@
 				3F8B466829EB1BE60071C105 /* notes.md */,
 				3F8B466929EB1BEF0071C105 /* rfer.md */,
 				3F08916829EB48A70047A8CF /* README.md */,
+				3FDFB4D429EBA0BE00A7A6A9 /* TODO.md */,
 			);
 			path = _docs;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				3F0F489129EB302000208CB4 /* Bundle-Decodable.swift in Sources */,
 				3F08916A29EB4B680047A8CF /* OfflineDatabaseView.swift in Sources */,
 				3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */,
+				3FDFB4D629EBA2F500A7A6A9 /* AnimeEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

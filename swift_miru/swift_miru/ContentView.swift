@@ -21,8 +21,14 @@ struct ContentView: View {
                 Text("Total Entries: \(loadedOfflineMinamiDatabase?.data.count ?? 0)")
                 
                 if loadedOfflineMinamiDatabase != nil {
+                    Text(loadedOfflineMinamiDatabase!.license.name)
+
                     List {
-                        Text(loadedOfflineMinamiDatabase!.license.name)
+                        ForEach(0..<loadedOfflineMinamiDatabase!.data.count) { num in
+                            let entry: AnimeEntry = loadedOfflineMinamiDatabase!.data[num]
+                            
+                            Text(entry.title)
+                        }
                     }
                 }
             }
@@ -66,6 +72,13 @@ struct ContentView: View {
             print("Sucessfully saved!")
         }
     }
+}
+
+func loadMinamiDb(offlineMinamiDatabase: OfflineMinamiDatabase, fileName: String) -> OfflineMinamiDatabase {
+    let loadedOfflineMinamiDatabase = Bundle.main.decode(fileName)
+    print("db is loaded")
+
+    return loadedOfflineMinamiDatabase
 }
 
 
