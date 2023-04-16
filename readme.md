@@ -7,7 +7,10 @@
 ### (4/15/2023)
 - Started migration to Swift and SwiftUI
     - Already linked up Codable to JSON for Project Minami's Offline Anime Database
+<<<<<<< HEAD
     - Created View for displaying information for anime details
+=======
+>>>>>>> devSwiftUI
 
 ### (4/6/2023)
 - Rework code from Python to Swift.
