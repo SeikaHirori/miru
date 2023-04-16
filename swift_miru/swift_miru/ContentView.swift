@@ -22,17 +22,18 @@ struct ContentView: View {
                 
                 if loadedOfflineMinamiDatabase != nil {
                     Text("Datebase is loaded!")
-
-                    List {
-                        ForEach(0..<loadedOfflineMinamiDatabase!.data.count) { num in
-                            let entry: AnimeEntry = loadedOfflineMinamiDatabase!.data[num]
-                            NavigationLink(entry.title) {
-                                AnimeView(animeEntry: entry)
-                            }
-                            
+                }
+                
+                List {
+                    if loadedOfflineMinamiDatabase != nil {
+                        NavigationLink("All Anime Entries") {
+                            AllAnimeView(loadedOfflineMinamiDatabase: loadedOfflineMinamiDatabase!)
                         }
+                    } else {
+                        Text("No database detected :'[")
                     }
                 }
+
             }
             .toolbar {
                 HStack {

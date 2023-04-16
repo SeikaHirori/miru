@@ -13,6 +13,8 @@
 		3F0F489529EB34AC00208CB4 /* anime-offline-database.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F489429EB34AC00208CB4 /* anime-offline-database.json */; };
 		3F0F489629EB34AC00208CB4 /* anime-offline-database.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F489429EB34AC00208CB4 /* anime-offline-database.json */; };
 		3F0F489729EB34AC00208CB4 /* anime-offline-database.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F489429EB34AC00208CB4 /* anime-offline-database.json */; };
+		3F6E01C229EC749400F97B81 /* AllAnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E01C129EC749400F97B81 /* AllAnimeView.swift */; };
+		3F6E01C429EC77AA00F97B81 /* LabelAnimeHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E01C329EC77AA00F97B81 /* LabelAnimeHorizontal.swift */; };
 		3F8B458A29EB188D0071C105 /* swift_miruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458929EB188D0071C105 /* swift_miruApp.swift */; };
 		3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458B29EB188D0071C105 /* Persistence.swift */; };
 		3F8B458F29EB188D0071C105 /* swift_miru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B458D29EB188D0071C105 /* swift_miru.xcdatamodeld */; };
@@ -49,6 +51,8 @@
 		3F0F488829EB237000208CB4 /* minami_json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minami_json.swift; sourceTree = "<group>"; };
 		3F0F489029EB302000208CB4 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		3F0F489429EB34AC00208CB4 /* anime-offline-database.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "anime-offline-database.json"; path = "../database_project_manami/anime-offline-database.json"; sourceTree = "<group>"; };
+		3F6E01C129EC749400F97B81 /* AllAnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAnimeView.swift; sourceTree = "<group>"; };
+		3F6E01C329EC77AA00F97B81 /* LabelAnimeHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAnimeHorizontal.swift; sourceTree = "<group>"; };
 		3F8B458629EB188D0071C105 /* swift_miru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_miru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8B458929EB188D0071C105 /* swift_miruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_miruApp.swift; sourceTree = "<group>"; };
 		3F8B458B29EB188D0071C105 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				3F08916929EB4B670047A8CF /* OfflineDatabaseView.swift */,
 				3FDFB4D529EBA2F500A7A6A9 /* AnimeEntry.swift */,
 				3F958B2429EBA44500958FC7 /* AnimeView.swift */,
+				3F6E01C129EC749400F97B81 /* AllAnimeView.swift */,
+				3F6E01C329EC77AA00F97B81 /* LabelAnimeHorizontal.swift */,
 			);
 			path = swift_miru;
 			sourceTree = "<group>";
@@ -315,6 +321,8 @@
 				3F8B459129EB188D0071C105 /* ContentView.swift in Sources */,
 				3F0F489129EB302000208CB4 /* Bundle-Decodable.swift in Sources */,
 				3F08916A29EB4B680047A8CF /* OfflineDatabaseView.swift in Sources */,
+				3F6E01C229EC749400F97B81 /* AllAnimeView.swift in Sources */,
+				3F6E01C429EC77AA00F97B81 /* LabelAnimeHorizontal.swift in Sources */,
 				3F8B458C29EB188D0071C105 /* Persistence.swift in Sources */,
 				3FDFB4D629EBA2F500A7A6A9 /* AnimeEntry.swift in Sources */,
 			);

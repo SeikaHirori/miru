@@ -8,13 +8,49 @@
 import SwiftUI
 
 struct LabelAnimeHorizontal: View {
+    let animeEntry: AnimeEntry
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        return HStack{
+            Text(animeEntry.title)
+                .font(.title)
+                .minimumScaleFactor(0.1)
+                .frame(maxWidth: .infinity, maxHeight: 50 ,alignment: .leading)
+                .padding()
+                .background(Color.indigo)
+                .foregroundColor(.white)
+                
+            
+            Spacer()
+            
+            VStack {
+                Text(animeEntry.animeSeason.formattedSeason)
+                Spacer()
+                Text(animeEntry.status)
+            }
+            .font(.caption)
+            .padding(.vertical)
+            .frame(maxWidth: 100, alignment: .center)
+            Spacer()
+            
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .overlay {
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(.blue)
+        }
+        
+
+        
     }
 }
 
 struct LabelAnimeHorizontal_Previews: PreviewProvider {
+    static let minamiDb = loadMinamiDb(fileName: "anime-offline-database.json")
+    
     static var previews: some View {
-        LabelAnimeHorizontal()
+        LabelAnimeHorizontal(animeEntry: minamiDb.data[2])
     }
 }
