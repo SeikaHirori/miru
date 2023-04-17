@@ -21,7 +21,10 @@ struct ContentView: View {
                 Text("Total Entries: \(loadedOfflineMinamiDatabase?.data.count ?? 0)")
                 
                 if loadedOfflineMinamiDatabase != nil {
-                    Text("Datebase is loaded!")
+                    Text("Database is loaded!")
+                    Text("Database's last update: \(loadedOfflineMinamiDatabase!.lastUpdate)")
+                } else {
+                    Text("No database detected :'[")
                 }
                 
                 List {
@@ -54,8 +57,9 @@ struct ContentView: View {
                     Divider()
                     
                     Button("Load local db") {
-                        loadedOfflineMinamiDatabase = loadMinamiDb(fileName: fileName)
-                        
+                        Task {
+                            loadedOfflineMinamiDatabase =  loadMinamiDb(fileName: fileName)
+                        }
                     }
                     Divider()
                     
