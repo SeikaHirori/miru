@@ -43,7 +43,17 @@ struct ContentView: View {
             .toolbar {
                 HStack {
                     
-                    Button("Load db") {
+                    Button("Download db") {
+                        
+                        /// # RFER #2
+                        Task {
+                            loadedOfflineMinamiDatabase = await download_manamai_project_anime_offline_database()
+                        }
+                        
+                    }
+                    Divider()
+                    
+                    Button("Load local db") {
                         loadedOfflineMinamiDatabase = loadMinamiDb(fileName: fileName)
                         
                     }

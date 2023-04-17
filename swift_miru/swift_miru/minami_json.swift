@@ -18,14 +18,13 @@ struct OfflineMinamiDatabase:Codable {
         let name: String
         let url: String
     }
-    
-
-
 }
 
 
 /// Offline Anime database comes from repo: https://github.com/manami-project/anime-offline-database
 /// - Returns: URL of database
+let url_manami_project_anime_offline_database: String = "https://raw.githubusercontent.com/manami-project/anime-offline-database/master/anime-offline-database.json"
+
 func get_anime_database_repo_url() -> String {
 
     var result:String
@@ -34,4 +33,21 @@ func get_anime_database_repo_url() -> String {
     
     result = url
     return result
+}
+
+
+/// # RFER #1
+/// - Returns: <#description#>
+func download_manamai_project_anime_offline_database() async -> OfflineMinamiDatabase? {
+    
+    do {
+        let url1 = URL(string: url_manami_project_anime_offline_database)!
+        
+        let offlineManamiProject: OfflineMinamiDatabase = try await URLSession.shared.decode(OfflineMinamiDatabase.self, from: url1)
+        
+        return offlineManamiProject
+    } catch {
+        print("Unexpected error: \(error)")
+        return nil
+    }
 }
