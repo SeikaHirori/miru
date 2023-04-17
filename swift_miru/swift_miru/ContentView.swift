@@ -44,36 +44,42 @@ struct ContentView: View {
 
             }
             .toolbar {
-                HStack {
-                    
-                    Button("Download db") {
+                VStack {
+                    HStack {
+                        Text("Credits")
+                    }
+                    HStack {
                         
-                        /// # RFER #2
-                        Task {
-                            loadedOfflineMinamiDatabase = await download_manamai_project_anime_offline_database()
+                        Button("Download db") {
+                            
+                            /// # RFER #2
+                            Task {
+                                loadedOfflineMinamiDatabase = await download_manamai_project_anime_offline_database()
+                            }
+                            
+                        }
+                        Divider()
+                        
+                        Button("Load local db") {
+                            Task {
+                                loadedOfflineMinamiDatabase =  loadMinamiDb(fileName: fileName)
+                            }
+                        }
+                        Divider()
+                        
+                        Button("Save db") {
+                            saveDbLocally()
+                        }
+                        Divider()
+                        
+                        Button("Clear db") {
+                            loadedOfflineMinamiDatabase = nil
+                            
+                            print("db is cleared!")
                         }
                         
                     }
-                    Divider()
                     
-                    Button("Load local db") {
-                        Task {
-                            loadedOfflineMinamiDatabase =  loadMinamiDb(fileName: fileName)
-                        }
-                    }
-                    Divider()
-                    
-                    Button("Save db") {
-                        saveDbLocally()
-                    }
-                    Divider()
-                    
-                    Button("Clear db") {
-                        loadedOfflineMinamiDatabase = nil
-                        
-                        print("db is cleared!")
-                    }
-
                 }
             }
             
