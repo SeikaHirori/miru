@@ -23,7 +23,9 @@ struct OfflineMinamiDatabase:Codable {
 
 /// Offline Anime database comes from repo: https://github.com/manami-project/anime-offline-database
 /// - Returns: URL of database
-let url_manami_project_anime_offline_database: String = "https://raw.githubusercontent.com/manami-project/anime-offline-database/master/anime-offline-database.json"
+let url_regular_manami_project_anime_offline_database: String = "https://raw.githubusercontent.com/manami-project/anime-offline-database/master/anime-offline-database.json"
+
+let url_minified_manami_project_anime_offline_database: String = "https://raw.githubusercontent.com/manami-project/anime-offline-database/master/anime-offline-database-minified.json"
 
 func get_anime_database_repo_url() -> String {
 
@@ -41,7 +43,7 @@ func get_anime_database_repo_url() -> String {
 func download_manamai_project_anime_offline_database() async -> OfflineMinamiDatabase? {
     
     do {
-        let url1 = URL(string: url_manami_project_anime_offline_database)!
+        let url1 = URL(string: url_regular_manami_project_anime_offline_database)!
         
         let offlineManamiProject: OfflineMinamiDatabase = try await URLSession.shared.decode(OfflineMinamiDatabase.self, from: url1)
         
