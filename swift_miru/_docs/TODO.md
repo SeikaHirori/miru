@@ -26,3 +26,5 @@
 - [ ] Add progress bar/circle for when:
     - [ ] Downloading JSON
     - [ ] Loading local JSON
+    - [ ] Saving db to userdefault
+- Learn and implement Core Data
