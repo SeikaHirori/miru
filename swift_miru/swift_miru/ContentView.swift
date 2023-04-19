@@ -21,7 +21,9 @@ struct ContentView: View {
                 Text("Total Entries: \(loadedOfflineMinamiDatabase?.data.count ?? 0)")
                 
                 if loadedOfflineMinamiDatabase != nil {
-                    Text("Datebase is loaded!")
+                    Text("Database's last update: \(loadedOfflineMinamiDatabase!.lastUpdate)")
+                } else {
+                    Text("No database detected :'[")
                 }
                 
                 List {
@@ -41,25 +43,42 @@ struct ContentView: View {
 
             }
             .toolbar {
-                HStack {
-                    
-                    Button("Load db") {
-                        loadedOfflineMinamiDatabase = loadMinamiDb(fileName: fileName)
+                VStack {
+                    HStack {
+                        Text("Credits")
+                    }
+                    HStack {
+                        
+                        Button("Download db") {
+                            
+                            /// # RFER #2
+                            Task {
+                                loadedOfflineMinamiDatabase = await download_manamai_project_anime_offline_database()
+                            }
+                            
+                        }
+                        Divider()
+                        
+                        Button("Load local db") {
+                            Task {
+                                loadedOfflineMinamiDatabase = await  asyncLoadLocalDb(fileName: fileName)
+                            }
+                        }
+                        Divider()
+                        
+                        Button("Save db") {
+                            saveDbLocally()
+                        }
+                        Divider()
+                        
+                        Button("Clear db") {
+                            loadedOfflineMinamiDatabase = nil
+                            
+                            print("db is cleared!")
+                        }
                         
                     }
-                    Divider()
                     
-                    Button("Save db") {
-                        saveDbLocally()
-                    }
-                    Divider()
-                    
-                    Button("Clear db") {
-                        loadedOfflineMinamiDatabase = nil
-                        
-                        print("db is cleared!")
-                    }
-
                 }
             }
             
@@ -80,7 +99,17 @@ struct ContentView: View {
             print("Sucessfully saved!")
         }
     }
+    
+    /// # RFER #3
+    /// - Parameter fileName: file name of database
+    /// - Returns: struct data "OfflineMinamiDatabase"
+    func asyncLoadLocalDb(fileName: String) async -> OfflineMinamiDatabase {
+        
+        return loadMinamiDb(fileName: fileName)
+    }
 }
+
+
 
 func loadMinamiDb(fileName: String) -> OfflineMinamiDatabase {
     let loadedOfflineMinamiDatabase = Bundle.main.decode(fileName)

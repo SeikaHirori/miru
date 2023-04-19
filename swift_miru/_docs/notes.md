@@ -9,3 +9,5 @@
 - Example from a user
     - https://www.hackingwithswift.com/forums/ios/uidocumentviewcontroller-stopaccessingsecurityscopedresource/1250
 
+## Note #2 | Example of parsing XML data using Apple's API "XMLParser"
+- https://blog.logrocket.com/xml-parsing-swift/
