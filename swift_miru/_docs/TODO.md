@@ -9,10 +9,12 @@
     - Season
     - Sources
 
-- [x] Button "load local db"
-    - See if we can have a "Task" and "async" functional for when loading Db locally
+- [ ] Button "load local db"
+    - [ ] See if we can have a "Task" and "async" functional for when loading Db locally
         - Reference how button "Download Db" works
             - Can't implement the web-style as it won't work.
+    - ADD A bool CHECK FOR Buttons "load local db" AND "Download db"
+        - this is so we don't override both JSONs when they're running.
 
     - CHECK COMMIT for implementation of Async/ Concurrency
         - Commit:
