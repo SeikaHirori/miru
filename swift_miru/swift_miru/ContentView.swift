@@ -21,7 +21,6 @@ struct ContentView: View {
                 Text("Total Entries: \(loadedOfflineMinamiDatabase?.data.count ?? 0)")
                 
                 if loadedOfflineMinamiDatabase != nil {
-                    Text("Database is loaded!")
                     Text("Database's last update: \(loadedOfflineMinamiDatabase!.lastUpdate)")
                 } else {
                     Text("No database detected :'[")
@@ -62,7 +61,7 @@ struct ContentView: View {
                         
                         Button("Load local db") {
                             Task {
-                                loadedOfflineMinamiDatabase =  loadMinamiDb(fileName: fileName)
+                                loadedOfflineMinamiDatabase = await  asyncLoadLocalDb(fileName: fileName)
                             }
                         }
                         Divider()
@@ -100,7 +99,17 @@ struct ContentView: View {
             print("Sucessfully saved!")
         }
     }
+    
+    /// # RFER #3
+    /// - Parameter fileName: file name of database
+    /// - Returns: struct data "OfflineMinamiDatabase"
+    func asyncLoadLocalDb(fileName: String) async -> OfflineMinamiDatabase {
+        
+        return loadMinamiDb(fileName: fileName)
+    }
 }
+
+
 
 func loadMinamiDb(fileName: String) -> OfflineMinamiDatabase {
     let loadedOfflineMinamiDatabase = Bundle.main.decode(fileName)

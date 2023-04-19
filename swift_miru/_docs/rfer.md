@@ -1,4 +1,5 @@
-#  <#Title#>
+#  RFER
+
 
 - RFER #1 | Downloading JSON and using it as Swift object WHILE using do-catch
     - Downloading JSON
@@ -9,3 +10,7 @@
 - RFER #2 | Dealing with error “async call in a function that does not support concurrency”
     - https://www.hackingwithswift.com/quick-start/concurrency/how-to-fix-the-error-async-call-in-a-function-that-does-not-support-concurrency
     - https://stackoverflow.com/a/67925526
+
+- RFER #3 | Concurrency/ Async operations
+    - Official Apple Docs:
+        - https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/
