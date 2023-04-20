@@ -11,3 +11,7 @@
 
 ## Note #2 | Example of parsing XML data using Apple's API "XMLParser"
 - https://blog.logrocket.com/xml-parsing-swift/
+
+## Note #3 | Official Apple Tutorial for SwiftUI with MacOS
+- https://developer.apple.com/tutorials/swiftui/creating-a-macos-app
+    - From quick glimpse, this looks incredible to being exposed to MacOS
