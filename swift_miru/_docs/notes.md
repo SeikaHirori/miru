@@ -15,3 +15,6 @@
 ## Note #3 | Official Apple Tutorial for SwiftUI with MacOS
 - https://developer.apple.com/tutorials/swiftui/creating-a-macos-app
     - From quick glimpse, this looks incredible to being exposed to MacOS
+
+## Note #4 | Lecture #16 from Stanford's CS193p on Multiplatiform Development with MacOS
+- https://cs193p.sites.stanford.edu/
