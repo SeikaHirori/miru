@@ -8,6 +8,6 @@ For the TO-DO list, check [here](/swift_miru/_docs/TODO.md)
 
 
 # Credits
-Massive shot outs to the [Manami Project](https://github.com/manami-project) for the [Anime Offline Database](https://github.com/manami-project/anime-offline-database)! The database is used for this project.
+Massive shout outs to the [Manami Project](https://github.com/manami-project) for the [Anime Offline Database](https://github.com/manami-project/anime-offline-database)! The database is used for this project.
 
 
