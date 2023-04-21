@@ -1,7 +1,7 @@
 # Objectives
 - Resolve personal issue of "o no, what anime/manga should I from my ***MyAnimeList (MAL)/Anilist/Kitsu.io*** list? idk sad :'("
 
-For additional objectives, click [here](/swift_miru/_docs/objectives.md)
+- For additional objectives, click [here](/swift_miru/_docs/objectives.md)
 
 <<<<<<< HEAD
 ### (4/15/2023)
