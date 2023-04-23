@@ -10,6 +10,10 @@ import SwiftUI
 struct LabelAnimeHorizontal: View {
     let animeEntry: AnimeEntry
     
+    
+    let geoWidth: CGFloat
+    let geoHeight: CGFloat
+    
     var body: some View {
         return HStack {
             GeometryReader { geoIn in
@@ -71,6 +75,15 @@ struct LabelAnimeHorizontal_Previews: PreviewProvider {
     static let minamiDb = loadMinamiDb(fileName: MyVariables.fileName)
     
     static var previews: some View {
-        LabelAnimeHorizontal(animeEntry: minamiDb.data[2])
+        VStack {
+            GeometryReader { geo in
+                let geoWidth: CGFloat = geo.size.width
+                let geoHeight: CGFloat = geo.size.height
+                
+                VStack {
+                    LabelAnimeHorizontal(animeEntry: minamiDb.data[2], geoWidth: geoWidth, geoHeight: geoHeight)
+                }
+            }
+        }
     }
 }

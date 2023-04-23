@@ -11,24 +11,31 @@ struct AllAnimeView: View {
     let loadedOfflineMinamiDatabase: OfflineMinamiDatabase
         
     var body: some View {
-        return NavigationStack {
-            ScrollView {
-                LazyVStack {
-                    ForEach(0..<loadedOfflineMinamiDatabase.data.count) { num in
-                        let animeEntry: AnimeEntry = loadedOfflineMinamiDatabase.data[num]
-                        NavigationLink {
-                            VStack {
-                                AnimeView(animeEntry: animeEntry)
+        return GeometryReader { geo in
+            let geoWidth = geo.size.width
+            let geoHeight = geo.size.height
+            
+            NavigationStack {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(0..<loadedOfflineMinamiDatabase.data.count) { num in
+                            let animeEntry: AnimeEntry = loadedOfflineMinamiDatabase.data[num]
+                            NavigationLink {
+                                VStack {
+                                    AnimeView(animeEntry: animeEntry)
+                                }
+                            } label: {
+                                VStack{
+                                        LabelAnimeHorizontal(animeEntry: animeEntry, geoWidth: geoWidth, geoHeight: geoHeight)
+                                    
+                                }
                             }
-                        } label: {
-                            LabelAnimeHorizontal(animeEntry: animeEntry)
                         }
                     }
                 }
+                .navigationTitle("All Anime Titles")
             }
-            .navigationTitle("All Anime Titles")
         }
-    
     }
 }
 
