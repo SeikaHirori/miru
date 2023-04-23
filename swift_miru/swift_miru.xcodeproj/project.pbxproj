@@ -133,6 +133,7 @@
 		3F8B458829EB188D0071C105 /* swift_miru */ = {
 			isa = PBXGroup;
 			children = (
+				3FD4A3A029F5B89F009C99B4 /* macOSView.swift */,
 				3F0F488829EB237000208CB4 /* minami_json.swift */,
 				3F8B458929EB188D0071C105 /* swift_miruApp.swift */,
 				3F8B458B29EB188D0071C105 /* Persistence.swift */,
@@ -150,7 +151,6 @@
 				3F7D265229EC89FD00669E03 /* RandomAnimeView.swift */,
 				3F8001C929EDE620008066AB /* URLSession-Decode.swift */,
 				3FD4A39E29F5B578009C99B4 /* iOSView.swift */,
-				3FD4A3A029F5B89F009C99B4 /* macOSView.swift */,
 				3FD4A3A229F5BA2A009C99B4 /* MyVariables.swift */,
 			);
 			path = swift_miru;

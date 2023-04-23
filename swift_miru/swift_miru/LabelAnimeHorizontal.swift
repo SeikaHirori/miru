@@ -12,6 +12,18 @@ struct LabelAnimeHorizontal: View {
     
     var body: some View {
         return HStack{
+            GeometryReader { geo in
+                AsyncImage(url: URL(string: animeEntry.thumbnail)) { image in
+                    image.resizable()
+                        .scaledToFit()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: geo.size.width * 0.5, height: geo.size.height * 0.5)
+                .frame(width: geo.size.width, height: geo.size.height)
+                
+            }
+
             Text(animeEntry.title)
                 .font(.title)
                 .minimumScaleFactor(0.1)
@@ -20,17 +32,17 @@ struct LabelAnimeHorizontal: View {
                 .background(Color.indigo)
                 .foregroundColor(.white)
                 
+//            // Disable for now
+//            Spacer()
             
-            Spacer()
-            
-            VStack {
-                Text(animeEntry.animeSeason.formattedSeason)
-                Text(animeEntry.status)
-            }
-            .font(.caption)
-            .padding(.vertical)
-            .frame(maxWidth: 100, alignment: .center)
-            Spacer()
+//            VStack {
+//                Text(animeEntry.animeSeason.formattedSeason)
+//                Text(animeEntry.status)
+//            }
+//            .font(.caption)
+//            .padding(.vertical)
+//            .frame(maxWidth: 100, alignment: .center)
+//            Spacer()
             
         }
         .padding()

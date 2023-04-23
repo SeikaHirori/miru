@@ -17,12 +17,13 @@ struct AnimeEntry:Codable {
     let animeSeason: AnimeSeason
     
     // Disabling as they are URLs for pictures
-//    let picture: String
-//    let thumbnail: String
-    
+    let picture: String
+    let thumbnail: String
+
     // Disabling these two as they take too long for preview to be able to load
-//        let synonyms: [String]
-//        let relations: [String]
+    let synonyms: [String]
+    let relations: [String]
+    
     let tags: [String]
 
 }
