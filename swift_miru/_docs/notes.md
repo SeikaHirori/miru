@@ -18,3 +18,12 @@
 
 ## Note #4 | Lecture #16 from Stanford's CS193p on Multiplatiform Development with MacOS
 - https://cs193p.sites.stanford.edu/
+
+## Note #5 | Fetch image with url
+- SOF answer:
+    - https://developer.apple.com/documentation/swiftui/asyncimage
+
+- Apple Doc using AsyncImage()
+    - https://developer.apple.com/documentation/swiftui/asyncimage
+
+- Use this toolset in the official anime info page AND list as thumbnail
