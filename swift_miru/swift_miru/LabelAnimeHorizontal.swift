@@ -12,58 +12,60 @@ struct LabelAnimeHorizontal: View {
     
     var body: some View {
         return HStack {
-            GeometryReader { geo in
+            GeometryReader { geoIn in
                 HStack(spacing: 0) {
                     AsyncImage(url: URL(string: animeEntry.thumbnail)) { image in
-                        image.resizable()
+                        image
+                            .resizable()
                             .scaledToFit()
                     } placeholder: {
                         ProgressView()
                     }
-                    .frame(width: geo.size.width * 0.5, height: geo.size.height * 0.5)
-                    .frame(width: geo.size.width, height: geo.size.height)
+                    .frame(width: geoIn.size.width * 0.9, height: geoIn.size.height * 0.9)
+                    .frame(width: geoIn.size.width, height: geoIn.size.height)
                     
                 }
             }
+            .frame(maxWidth: 100)
+            
+            
             
             Text(animeEntry.title)
                 .font(.title)
+            //                    .scaledToFit()
                 .minimumScaleFactor(0.1)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
                 .background(Color.indigo)
                 .foregroundColor(.white)
-                .frame(width: .infinity)
+            
+            
+            
+            
+            
+            //            // Disable for now
+            //            Spacer()
+            
+            //            VStack {
+            //                Text(animeEntry.animeSeason.formattedSeason)
+            //                Text(animeEntry.status)
+            //            }
+            //            .font(.caption)
+            //            .padding(.vertical)
+            //            .frame(maxWidth: 100, alignment: .center)
+            //            Spacer()
+            
         }
+        
         .padding()
-        .frame(maxWidth: .infinity, maxHeight: 200)
+        .frame(maxWidth: .infinity, maxHeight: 125)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(.blue)
         }
-
-            
-                
-//            // Disable for now
-//            Spacer()
-            
-//            VStack {
-//                Text(animeEntry.animeSeason.formattedSeason)
-//                Text(animeEntry.status)
-//            }
-//            .font(.caption)
-//            .padding(.vertical)
-//            .frame(maxWidth: 100, alignment: .center)
-//            Spacer()
-            
     }
-
-        
-
-        
 }
-
 
 struct LabelAnimeHorizontal_Previews: PreviewProvider {
     static let minamiDb = loadMinamiDb(fileName: MyVariables.fileName)
