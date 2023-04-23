@@ -18,7 +18,7 @@ struct LabelAnimeHorizontal: View {
         return HStack {
             GeometryReader { geoIn in
                 HStack(spacing: 0) {
-                    AsyncImage(url: URL(string: animeEntry.thumbnail)) { image in
+                    AsyncImage(url: URL(string: animeEntry.picture)) { image in
                         image
                             .resizable()
                             .scaledToFit()
@@ -30,7 +30,7 @@ struct LabelAnimeHorizontal: View {
                     
                 }
             }
-            .frame(maxWidth: 100)
+            .frame(width: geoWidth * 0.2)
             
             
             

@@ -16,7 +16,7 @@ struct ContentView: View {
         
         #elseif os(macOS)
         return macOSView(fileName: MyVariables.fileName)
-        
+                
         #else
         // Default to iOS for now
         return VStack {

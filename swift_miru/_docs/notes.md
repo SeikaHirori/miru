@@ -27,3 +27,7 @@
     - https://developer.apple.com/documentation/swiftui/asyncimage
 
 - Use this toolset in the official anime info page AND list as thumbnail
+
+## Note #6 | Using ProgessView() for progress bar
+- https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-progress-on-a-task-using-progressview
+- https://developer.apple.com/documentation/swiftui/progressview
