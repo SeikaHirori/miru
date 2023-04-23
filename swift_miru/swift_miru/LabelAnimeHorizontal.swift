@@ -47,7 +47,7 @@ struct LabelAnimeHorizontal: View {
 }
 
 struct LabelAnimeHorizontal_Previews: PreviewProvider {
-    static let minamiDb = loadMinamiDb(fileName: "anime-offline-database.json")
+    static let minamiDb = loadMinamiDb(fileName: MyVariables.fileName)
     
     static var previews: some View {
         LabelAnimeHorizontal(animeEntry: minamiDb.data[2])
