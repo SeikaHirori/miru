@@ -23,7 +23,7 @@ struct AnimeView: View {
 }
 
 struct AnimeView_Previews: PreviewProvider {
-    static let minamiDb = loadMinamiDb(fileName: "anime-offline-database.json")
+    static let minamiDb = loadMinamiDb(fileName: MyVariables.fileName)
     
     static var previews: some View {
         AnimeView(animeEntry: minamiDb.data[0])
