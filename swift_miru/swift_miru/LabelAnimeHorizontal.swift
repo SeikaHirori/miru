@@ -32,9 +32,9 @@ struct LabelAnimeHorizontal: View {
             
             Text(animeEntry.title)
                 .font(.title)
-            //                    .scaledToFit()
                 .minimumScaleFactor(0.1)
                 .frame(maxWidth: .infinity, alignment: .center)
+                .frame(maxHeight: .infinity)
                 .padding()
                 .background(Color.indigo)
                 .foregroundColor(.white)
@@ -58,7 +58,7 @@ struct LabelAnimeHorizontal: View {
         }
         
         .padding()
-        .frame(maxWidth: .infinity, maxHeight: 125)
+        .frame(maxWidth: .infinity, minHeight: 150, maxHeight: 150)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: 10)
