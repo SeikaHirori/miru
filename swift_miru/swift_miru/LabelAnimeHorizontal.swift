@@ -11,19 +11,21 @@ struct LabelAnimeHorizontal: View {
     let animeEntry: AnimeEntry
     
     var body: some View {
-        return HStack{
+        return HStack {
             GeometryReader { geo in
-                AsyncImage(url: URL(string: animeEntry.thumbnail)) { image in
-                    image.resizable()
-                        .scaledToFit()
-                } placeholder: {
-                    ProgressView()
+                HStack(spacing: 0) {
+                    AsyncImage(url: URL(string: animeEntry.thumbnail)) { image in
+                        image.resizable()
+                            .scaledToFit()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: geo.size.width * 0.5, height: geo.size.height * 0.5)
+                    .frame(width: geo.size.width, height: geo.size.height)
+                    
                 }
-                .frame(width: geo.size.width * 0.5, height: geo.size.height * 0.5)
-                .frame(width: geo.size.width, height: geo.size.height)
-                
             }
-
+            
             Text(animeEntry.title)
                 .font(.title)
                 .minimumScaleFactor(0.1)
@@ -31,6 +33,17 @@ struct LabelAnimeHorizontal: View {
                 .padding()
                 .background(Color.indigo)
                 .foregroundColor(.white)
+                .frame(width: .infinity)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: 200)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .overlay {
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(.blue)
+        }
+
+            
                 
 //            // Disable for now
 //            Spacer()
@@ -44,19 +57,13 @@ struct LabelAnimeHorizontal: View {
 //            .frame(maxWidth: 100, alignment: .center)
 //            Spacer()
             
-        }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: 100)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
-        .overlay {
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(.blue)
-        }
+    }
+
         
 
         
-    }
 }
+
 
 struct LabelAnimeHorizontal_Previews: PreviewProvider {
     static let minamiDb = loadMinamiDb(fileName: MyVariables.fileName)

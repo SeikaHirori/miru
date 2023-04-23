@@ -9,14 +9,11 @@ import SwiftUI
 
 struct AllAnimeView: View {
     let loadedOfflineMinamiDatabase: OfflineMinamiDatabase
-    
-    let columns = [GridItem(.adaptive(minimum: 150))]
-    
-    var body: some View {
         
+    var body: some View {
         return NavigationStack {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVStack {
                     ForEach(0..<loadedOfflineMinamiDatabase.data.count) { num in
                         let animeEntry: AnimeEntry = loadedOfflineMinamiDatabase.data[num]
                         NavigationLink {
