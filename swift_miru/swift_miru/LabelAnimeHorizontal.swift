@@ -47,18 +47,23 @@ struct LabelAnimeHorizontal: View {
             
             
             
-            //            // Disable for now
-            //            Spacer()
-            
-            //            VStack {
-            //                Text(animeEntry.animeSeason.formattedSeason)
-            //                Text(animeEntry.status)
-            //            }
-            //            .font(.caption)
-            //            .padding(.vertical)
-            //            .frame(maxWidth: 100, alignment: .center)
-            //            Spacer()
-            
+            // Disable for now
+            VStack {
+                Text(animeEntry.animeSeason.formattedSeason)
+                Text(animeEntry.animeSeason.formattedYear)
+                Text(animeEntry.status)
+            }
+            .font(.caption)
+            .minimumScaleFactor(0.1)
+            .frame(width: geoWidth * 0.10, alignment: .center)
+            .frame(maxHeight: .infinity)
+            .padding(.vertical)
+            .background(Color.green)
+            .foregroundColor(Color.white)
+
+        
+//                Spacer()
+        
         }
         
         .padding()

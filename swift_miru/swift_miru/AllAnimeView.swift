@@ -19,16 +19,19 @@ struct AllAnimeView: View {
                 ScrollView {
                     LazyVStack {
                         ForEach(0..<loadedOfflineMinamiDatabase.data.count) { num in
+                            
+                            
                             let animeEntry: AnimeEntry = loadedOfflineMinamiDatabase.data[num]
+                            
+                            
                             NavigationLink {
                                 VStack {
                                     AnimeView(animeEntry: animeEntry)
                                 }
                             } label: {
-                                VStack{
-                                        LabelAnimeHorizontal(animeEntry: animeEntry, geoWidth: geoWidth, geoHeight: geoHeight)
-                                    
-                                }
+                                
+                                
+                                LabelAnimeHorizontal(animeEntry: animeEntry, geoWidth: geoWidth, geoHeight: geoHeight)
                             }
                         }
                     }

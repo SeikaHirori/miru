@@ -30,13 +30,6 @@ struct ContentView: View {
 
 
 
-func loadMinamiDb(fileName: String) -> OfflineMinamiDatabase {
-    let loadedOfflineMinamiDatabase = Bundle.main.decode(fileName)
-    print("db is loaded")
-
-    return loadedOfflineMinamiDatabase
-}
-
 
 // Original code created when checked out Core Data and CloudKit
 struct OriginalContentView: View {

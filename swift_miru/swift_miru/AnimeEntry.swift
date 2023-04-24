@@ -33,6 +33,9 @@ struct AnimeSeason: Codable {
     let year: Int?
     
     var formattedSeason: String {
-        "\(season ?? "N/A") \(year?.description ?? ":'[")"
+        "\(season ?? "N/A")"
+    }
+    var formattedYear: String {
+        "\(year?.description ?? ":'[")"
     }
 }

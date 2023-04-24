@@ -23,9 +23,10 @@ struct RandomAnimeView: View {
                         .multilineTextAlignment(.center)
                         .minimumScaleFactor(0.1)
                         .padding(.vertical)
-                    
+                
                     NavigationLink("More info") {
                         AnimeView(animeEntry: currentAnimeEntry)
+                        
                     }
                     .padding()
                 }

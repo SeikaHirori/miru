@@ -14,6 +14,8 @@ struct iOSView: View {
     @State private var loadedOfflineMinamiDatabase: OfflineMinamiDatabase?
 //    var loadedOfflineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
     
+    @State private var isDbBeingChanged: Bool = false
+    
     var body: some View {
         return NavigationStack {
             VStack {
@@ -53,7 +55,14 @@ struct iOSView: View {
                             
                             /// # RFER #2
                             Task {
-                                loadedOfflineMinamiDatabase = await download_manamai_project_anime_offline_database()
+                                if isDbBeingChanged == true {
+                                    print("something else is working, can't download json")
+                                } else {
+                                    print("now downloading json")
+                                    isDbBeingChanged.toggle()
+                                    loadedOfflineMinamiDatabase = await download_manamai_project_anime_offline_database()
+                                    isDbBeingChanged.toggle()
+                                }
                             }
                             
                         }
@@ -61,9 +70,17 @@ struct iOSView: View {
                         
                         Button("Load local db") {
                             Task {
-                                loadedOfflineMinamiDatabase = await  asyncLoadLocalDb(fileName: fileName)
+                                if isDbBeingChanged == true {
+                                    print("something else is working, so can't load local json")
+                                } else {
+                                    print("now loading local json")
+                                    isDbBeingChanged.toggle()
+                                    loadedOfflineMinamiDatabase = await  asyncLoadLocalDb(fileName: fileName)
+                                    isDbBeingChanged.toggle()
+                                }
                             }
                         }
+                       
                         Divider()
                         
                         Button("Save db") {
@@ -106,6 +123,8 @@ struct iOSView: View {
     func asyncLoadLocalDb(fileName: String) async -> OfflineMinamiDatabase {
         return loadMinamiDb(fileName: fileName)
     }
+    
+
 
 }
 

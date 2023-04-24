@@ -53,3 +53,15 @@ func download_manamai_project_anime_offline_database() async -> OfflineMinamiDat
         return nil
     }
 }
+
+func asyncLoadLocalDb(fileName: String) async -> OfflineMinamiDatabase {
+    return loadMinamiDb(fileName: fileName)
+}
+
+
+func loadMinamiDb(fileName: String) -> OfflineMinamiDatabase {
+    let loadedOfflineMinamiDatabase = Bundle.main.decode(fileName)
+    print("db is loaded")
+
+    return loadedOfflineMinamiDatabase
+}
