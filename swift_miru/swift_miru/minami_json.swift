@@ -45,6 +45,8 @@ func download_manamai_project_anime_offline_database() async -> OfflineMinamiDat
     do {
         let url1 = URL(string: url_regular_manami_project_anime_offline_database)!
         
+    // Try to put download bar here?
+
         let offlineManamiProject: OfflineMinamiDatabase = try await URLSession.shared.decode(OfflineMinamiDatabase.self, from: url1)
         
         return offlineManamiProject

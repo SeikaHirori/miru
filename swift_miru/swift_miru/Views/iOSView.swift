@@ -15,6 +15,7 @@ struct iOSView: View {
 //    var loadedOfflineMinamiDatabase: OfflineMinamiDatabase = Bundle.main.decode("anime-offline-database.json")
     
     @State private var isDbBeingChanged: Bool = false
+    @State private var downloadAmount = 0.0
     
     var body: some View {
         return NavigationStack {
@@ -27,6 +28,11 @@ struct iOSView: View {
                 } else {
                     Text("No database detected :'[")
                 }
+                
+                VStack {
+                    ProgressView("Downloading", value: downloadAmount)
+                }
+                .padding()
                 
                 List {
                     if loadedOfflineMinamiDatabase != nil {
@@ -97,9 +103,11 @@ struct iOSView: View {
                     }
                     
                 }
+                
             }
             
         }
+        .padding()
     }
     
     func saveDbLocally() -> Void {
